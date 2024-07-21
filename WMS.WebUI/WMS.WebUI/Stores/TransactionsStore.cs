@@ -15,7 +15,7 @@ public class TransactionsStore : ITransactionsStore
     public TransactionsStore()
     {
         _client = new HttpClient();
-        _client.BaseAddress = new Uri("https://localhost:7097/api/");
+        _client.BaseAddress = new Uri("https://w2sc5qx5-7097.inc1.devtunnels.ms/api/");
     }
 
     public async Task<List<TransactionView>> GetTransactionsAsync(string? search, string? type)
